@@ -1,0 +1,266 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="tap_container">
+      <!-- tap section name -->
+      <ul class="nav nav-tabs border-0 w-100" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="store-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#store-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="store-tab-pane"
+            aria-selected="true"
+          >
+            المخزن
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="operations-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#operations-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="operations-tab-pane"
+            aria-selected="false"
+          >
+            العماليات
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="reports-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#reports-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="reports-tab-pane"
+            aria-selected="false"
+          >
+            التقارير
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="system-configuration-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#system-configuration-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="system-configuration-tab-pane"
+            aria-selected="false"
+          >
+            اعدادات النظام
+          </button>
+        </li>
+      </ul>
+      <!-- tap content -->
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="store-tab-pane"
+          role="tabpanel"
+          aria-labelledby="store-tab"
+          tabindex="0"
+        >
+          <div class="store_content d-flex align-items-center gap-3">
+            <div class="more_data">
+              <a
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <img src="image/box_img.svg" alt="box" />
+                الاقمشة
+              </a>
+            </div>
+            <div class="more_data">
+              <a href="#">
+                <img src="image/box_img.svg" alt="box" />
+                شاشة التوريد
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">المخزون</h5>
+                <button
+                  type="button"
+                  class="btn-close ms-0 me-auto"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="fabric_details mb-3">
+                  <h5 class="head_name p-2 mb-3">تفاصيل القماش</h5>
+                  <div class="fabric_content">
+                    <div class="row g-3">
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">رقم القماش :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">اسم القماش :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">اللوان :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">الكمية الافتتاحية :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">الامتار المتبقه :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">سعر الشراء:</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">سعر البيع:</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="inp_holder d-flex align-items-center gap-1">
+                          <label for="" class="text-nowrap fw-bolder">ملاحظات:</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="show_data">
+                  <div class="table-responsive">
+                    <table class="table main-table">
+                      <thead>
+                        <tr>
+                          <th>رقم القماش</th>
+                          <th>اسم القماش</th>
+                          <th>اللوان</th>
+                          <th>عدد الامتار</th>
+                          <th>الامتار المتبقية</th>
+                          <th>سعر الشراء</th>
+                          <th>سعر البيع</th>
+                          <th>ملاحظات</th>
+                          <th>تاريخ الادخال</th>
+                          <th>المستخدم</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>خليجي</td>
+                          <td></td>
+                          <td>200.00</td>
+                          <td>0.00</td>
+                          <td>10.00</td>
+                          <td>15.00</td>
+                          <td></td>
+                          <td>2/20/2022</td>
+                          <td>admin</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="view-data"></div>
+                  <div class="status_data d-flex align-items-center justify-content-center gap-2">
+                    <div class="box-info">15.00</div>
+                    <div class="box-info">10.00</div>
+                    <div class="box-info">0.00</div>
+                    <div class="box-info">200.00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="operations-tab-pane"
+          role="tabpanel"
+          aria-labelledby="operations-tab"
+          tabindex="0"
+        >
+          محتوي وهمي
+        </div>
+        <div
+          class="tab-pane fade"
+          id="reports-tab-pane"
+          role="tabpanel"
+          aria-labelledby="reports-tab"
+          tabindex="0"
+        >
+          محتوي وهمي
+        </div>
+        <div
+          class="tab-pane fade"
+          id="system-configuration-tab-pane"
+          role="tabpanel"
+          aria-labelledby="system-configuration-tab"
+          tabindex="0"
+        >
+          محتوي وهمي
+        </div>
+      </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

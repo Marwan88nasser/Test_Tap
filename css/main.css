@@ -1,3 +1,4 @@
+/* start global rule */
 * {
   padding: 0%;
   margin: 0%;
@@ -6,7 +7,7 @@
 
 body {
   background-color: #f5f5f5 !important;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -17,17 +18,30 @@ ul {
 a {
   text-decoration: none !important;
 }
+/* end global rule */
+
+/* start global classes */
+.text-nowrap {
+  white-space: nowrap;
+}
 
 .pointer {
   cursor: pointer;
 }
+/* end global classes */
 
+/* start custom the taps */
 .tap_container .nav-tabs {
   background-color: #588b7c;
 }
 .tap_container .nav-tabs > li > .nav-link {
   color: #fff;
   margin-bottom: 0;
+}
+
+.tap_container .nav-tabs > li > .nav-link:focus {
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .tap_container .nav-tabs > li > .nav-link:not(.active):hover {
@@ -53,20 +67,15 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
 }
 
 .tap_container .tab-content .tab-pane .store_content .more_data > a > img {
-  width: 25px;
+  width: 30px;
 }
-
-/* global classes */
-.xs-inp {
-  width: 60px !important;
-}
-
-.text-nowrap {
-  white-space: nowrap;
-}
+/* end custom the taps */
 
 h5.head_name {
   background-color: #d4d4d4;

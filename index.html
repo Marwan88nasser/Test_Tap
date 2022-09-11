@@ -78,11 +78,10 @@
             id="store-tab-pane"
             role="tabpanel"
             aria-labelledby="store-tab"
-            tabindex="0"
-          >
-            <div class="store_content d-flex align-items-center gap-3">
+            tabindex="0">
+            <div class="store_content d-flex flex-wrap align-items-center gap-3">
               <div class="more_data">
-                <a href="Inventory.html">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <img src="image/box_img.svg" alt="box" />
                   الاقمشة
                 </a>
@@ -95,23 +94,294 @@
               </div>
             </div>
           </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">المخزون</h5>
+                  <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="fabric_details mb-3">
+                    <h5 class="head_name p-2 mb-3">تفاصيل القماش</h5>
+                    <div class="fabric_content">
+                      <div class="row g-3">
+                        <div class="col-sm-6 col-lg-3">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder">رقم القماش :</label>
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder">اسم القماش :</label>
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder">اللوان :</label>
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder"
+                              >الكمية الافتتاحية :</label
+                            >
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder"
+                              >الامتار المتبقه :</label
+                            >
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder">سعر الشراء:</label>
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder">سعر البيع:</label>
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="inp_holder d-flex align-items-center gap-1">
+                            <label for="" class="text-nowrap fw-bolder">ملاحظات:</label>
+                            <input type="text" name="" id="" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show_data">
+                    <div class="table-responsive">
+                      <table class="table main-table">
+                        <thead>
+                          <tr>
+                            <th>رقم القماش</th>
+                            <th>اسم القماش</th>
+                            <th>اللوان</th>
+                            <th>عدد الامتار</th>
+                            <th>الامتار المتبقية</th>
+                            <th>سعر الشراء</th>
+                            <th>سعر البيع</th>
+                            <th>ملاحظات</th>
+                            <th>تاريخ الادخال</th>
+                            <th>المستخدم</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>خليجي</td>
+                            <td></td>
+                            <td>200.00</td>
+                            <td>0.00</td>
+                            <td>10.00</td>
+                            <td>15.00</td>
+                            <td></td>
+                            <td>2/20/2022</td>
+                            <td>admin</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="view-data"></div>
+                    <div
+                      class="status_data d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <div class="box-info">15.00</div>
+                      <div class="box-info">10.00</div>
+                      <div class="box-info">0.00</div>
+                      <div class="box-info">200.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger btn-sm pb-2" data-bs-dismiss="modal">رجوع</button>
+                  <button type="button" class="btn btn-success btn-sm pb-2">حفظ</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             class="tab-pane fade"
             id="operations-tab-pane"
             role="tabpanel"
             aria-labelledby="operations-tab"
-            tabindex="0"
-          >
-            محتوي وهمي
+            tabindex="0">
+            <div class="app_holder d-flex flex-wrap flex-lg-nowrap align-items-center gap-5">
+              <div class="store_content content_border d-flex align-items-center gap-3 flex-wrap">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/sewing-machine-svgrepo-com.svg" alt="box" />
+                    الخياطون
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/group-svgrepo-com.svg" alt="box" />
+                    المعلمين
+                  </a>
+                </div>
+              </div>
+              <div class="store_content content_border d-flex align-items-center gap-3 flex-wrap">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/user.svg" alt="box" />
+                    العملاء
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/chat-sms-svgrepo-com.svg" alt="box" />
+                    اشعارات
+                    <br>
+                    SMS
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/money-svgrepo-com.svg" alt="box" />
+                    سندات القبض
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/cart-svgrepo-com.svg" alt="box" />
+                    المشتريات
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/warning-svgrepo-com.svg" alt="box" />
+                    اشعارات
+                    <br>
+                    دائنه و مدينه
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             class="tab-pane fade"
             id="reports-tab-pane"
             role="tabpanel"
             aria-labelledby="reports-tab"
-            tabindex="0"
-          >
-            محتوي وهمي
+            tabindex="0">
+            <div class="app_holder d-flex align-items-center gap-5 flex-wrap flex-lg-nowrap">
+              <div class="store_content content_border d-flex align-items-center flex-wrap gap-3">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/daily-specials-board-menu-svgrepo-com (1).svg" alt="box" />
+                    التقرير
+                    <br>
+                    اليومي
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/daily-specials-board-menu-svgrepo-com.svg" alt="box" />
+                    التقرير
+                    <br>
+                    الشهري
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/daily-specials-board-svgrepo-com.svg" alt="box" />
+                    تقرير الفترة 
+                    <br> 
+                    من الي
+                  </a>
+                </div>
+              </div>
+              <div class="store_content content_border d-flex flex-wrap align-items-center gap-3">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/paid-svgrepo-com.svg" alt="box" />
+                    الفواتير
+                    <br>
+                    المدفوعه
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/unpaid-svgrepo-com.svg" alt="box" />
+                    فواتير غير
+                    <br>
+                    مدفوعة
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/do-not-dry-svgrepo-com.svg" alt="box" />
+                    لم يدفع
+                    <br>
+                    عربون
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/paid-svgrepo-com (1).svg" alt="box" />
+                    الفواتير 
+                    <br>
+                    المستلمه
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/bill-paid-svgrepo-com.svg" alt="box" />
+                    فواتير غير
+                    <br>
+                    مستلمه
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/calendar-svgrepo-com.svg" alt="box" />
+                    الفواتير 
+                    <br>
+                    للفترة من الي
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/money-svgrepo-com.svg" alt="box" />
+                    تقارير  
+                    <br>
+                    سندات القبض
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/cart-svgrepo-com.svg" alt="box" />
+                    تقارير  
+                    <br>
+                    المشتريات
+                  </a>
+                </div>
+              </div>
+              <div class="store_content content_border d-flex flex-wrap align-items-center gap-2">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/user-svgrepo-com.svg" alt="box" />
+                    بيانات
+                    <br>
+                    العميل
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             class="tab-pane fade"
@@ -120,7 +390,43 @@
             aria-labelledby="system-configuration-tab"
             tabindex="0"
           >
-            محتوي وهمي
+            <div class="app_holder d-flex align-items-center gap-5 flex-wrap flex-lg-nowrap">
+              <div class="store_content content_border d-flex align-items-center gap-2 flex-wrap">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/user-password-svgrepo-com.svg" alt="box" />
+                    ادارة
+                    <br>
+                    المستخدمين
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/lock-svgrepo-com.svg" alt="box" />
+                    ادارة
+                    <br>
+                    الصلاحيات
+                  </a>
+                </div>
+              </div>
+              <div class="store_content content_border d-flex align-items-center gap-2 flex-wrap">
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/data-text-svgrepo-com.svg" alt="box" />
+                    بيانات   
+                    <br>
+                    الشركة
+                  </a>
+                </div>
+                <div class="more_data">
+                  <a href="#">
+                    <img src="image/branch-two-svgrepo-com.svg" alt="box" />
+                    ادارة  
+                    <br>
+                    الفروع
+                  </a>
+                </div>
+              </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,79 @@
+.tap_container .nav-tabs {
+  background-color: #588b7c;
+}
+.tap_container .nav-tabs > li > .nav-link {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.tap_container .nav-tabs > li > .nav-link:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.tap_container .nav-tabs > li > .nav-link:not(.active):hover {
+  border-color: transparent !important;
+  background-color: #4e7d6f;
+}
+
+.tap_container .nav-tabs > li > .nav-link.active {
+  background-color: #dcdcdc;
+  border-color: transparent !important;
+  color: #000;
+  border-radius: 0;
+}
+
+.tap_container .tab-content {
+  background-color: #dcdcdc;
+  padding: 15px 10px 10px;
+}
+
+.tap_container .tab-content .tab-pane .store_content .more_data > a {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+}
+
+.tap_container .tab-content .tab-pane .store_content .more_data > a > img {
+  width: 30px;
+}
+/* end custom the taps */
+
+
+h5.head_name {
+  background-color: #d4d4d4;
+}
+
+.fabric_details {
+  background-color: #f6f6f6;
+  border: 1px solid #e1e0e0;
+  padding: 5px;
+  .fabric_content {
+    padding: 5px;
+  }
+}
+
+.show_data {
+  border: 1px solid #cbcaca;
+}
+
+.show_data .view-data {
+  min-height: 90px;
+}
+
+.show_data .status_data {
+  padding: 7px;
+  background-color: #edeaea;
+}
+
+.show_data .status_data .box-info {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 4px 18px;
+  border: 1px solid #bbbbbb;
+}

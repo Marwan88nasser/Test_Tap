@@ -1,0 +1,33 @@
+.customers_content {
+  .details {
+    .inp_holder {
+      > input {
+        background-color: #0effff;
+      }
+    }
+    .holder {
+      .form-floating {
+        > textarea {
+          background-color: #0effff;
+        }
+      }
+      .send {
+        background-color: #0effff;
+        font-weight: 700;
+      }
+    }
+    .buttons-line {
+      
+      .btn_option {
+        display: flex;
+        align-items: center;
+        background-color: #fff3cd;
+        font-weight: 700;
+        border: 1px solid #e9d6a0;
+        
+      }
+    }
+  }
+  .show_data {
+  }
+}

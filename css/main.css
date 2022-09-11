@@ -28,8 +28,11 @@ a {
 .pointer {
   cursor: pointer;
 }
-/* end global classes */
 
+.supplies_color {
+  color: #619ac8;
+}
+/* end global classes */
 /* start custom the taps */
 .tap_container .nav-tabs {
   background-color: #588b7c;

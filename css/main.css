@@ -123,13 +123,13 @@ h5.head_name {
 }
 
 .customers_content .details .inp_holder > input {
-  background-color: #a1ffff;
+  background-color: #afeeee;
 }
 .customers_content .details .holder .form-floating > textarea {
-  background-color: #a1ffff;
+  background-color: #afeeee;
 }
 .customers_content .details .holder .send {
-  background-color: #a1ffff;
+  background-color: #afeeee;
   font-weight: 700;
 }
 .customers_content .details .buttons-line .btn_option {

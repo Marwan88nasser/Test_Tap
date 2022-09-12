@@ -1,9 +1,13 @@
-.tap_container .nav-tabs {
-  background-color: #588b7c;
-}
-.tap_container .nav-tabs > li > .nav-link {
-  color: #fff;
-  margin-bottom: 0;
+.tap_container  {
+  .nav-tabs {
+    background-color: #588b7c;
+    > li {
+      > .nav-link{
+        color: #fff;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .tap_container .nav-tabs > li > .nav-link:focus {

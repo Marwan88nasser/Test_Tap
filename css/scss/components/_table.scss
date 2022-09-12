@@ -43,3 +43,28 @@
 // .table-responsive .main-table tr td:last-child {
 //   border-left: none !important;
 // }
+
+.show_data {
+  .table-responsive {
+    .main-table {
+      tr {
+        border-bottom: 1px solid #ccd4d4 !important;
+        td {
+          padding: 2px 10px;
+          background-color: #e5e3e3;
+        }
+        &.blue-td {
+          td {
+            background-color: #dcf5f5;
+          }
+        }
+        &.white-td {
+          td {
+            background-color: #fff;
+          }
+        }
+      }
+      
+    }
+  }
+}

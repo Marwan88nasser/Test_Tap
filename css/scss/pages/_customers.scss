@@ -2,32 +2,54 @@
   .details {
     .inp_holder {
       > input {
-        background-color: #0effff;
+        background-color: #a1ffff;
       }
     }
     .holder {
       .form-floating {
         > textarea {
-          background-color: #0effff;
+          background-color: #a1ffff;
         }
       }
       .send {
-        background-color: #0effff;
+        background-color: #a1ffff;
         font-weight: 700;
       }
     }
     .buttons-line {
-      
       .btn_option {
+        padding-left: 2px;
         display: flex;
         align-items: center;
-        background-color: #fff3cd;
+        background-color: rgb(248 232 184);
         font-weight: 700;
-        border: 1px solid #e9d6a0;
-        
+        border: 1px solid rgb(237 192 66);
       }
     }
   }
   .show_data {
+    .table-responsive {
+      .main-table {
+        tr {
+          border-bottom: 1px solid #ccd4d4 !important;
+          td {
+            padding: 2px 10px;
+            background-color: #e5e3e3;
+          }
+          &.blue-td {
+            td {
+              background-color: #dcf5f5;
+            }
+          }
+          &.white-td {
+            td {
+              background-color: #fff;
+            }
+          }
+        }
+        
+      }
+    }
   }
 }
+

@@ -123,22 +123,37 @@ h5.head_name {
 }
 
 .customers_content .details .inp_holder > input {
-  background-color: #0effff;
+  background-color: #a1ffff;
 }
 .customers_content .details .holder .form-floating > textarea {
-  background-color: #0effff;
+  background-color: #a1ffff;
 }
 .customers_content .details .holder .send {
-  background-color: #0effff;
+  background-color: #a1ffff;
   font-weight: 700;
 }
 .customers_content .details .buttons-line .btn_option {
+  padding-left: 2px;
   display: flex;
   align-items: center;
-  background-color: #fff3cd;
+  background-color: rgb(248, 232, 184);
   font-weight: 700;
-  border: 1px solid #e9d6a0;
+  border: 1px solid rgb(237, 192, 66);
 }
+.customers_content .show_data .table-responsive .main-table tr {
+  border-bottom: 1px solid #ccd4d4 !important;
+}
+.customers_content .show_data .table-responsive .main-table tr td {
+  padding: 2px 10px;
+  background-color: #e5e3e3;
+}
+.customers_content .show_data .table-responsive .main-table tr.blue-td td {
+  background-color: #dcf5f5;
+}
+.customers_content .show_data .table-responsive .main-table tr.white-td td {
+  background-color: #fff;
+}
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;
@@ -159,7 +174,7 @@ h5.head_name {
 }
 
 .table-responsive .main-table tr th {
-  background-color: #198754;
+  background-color: rgb(37, 135, 89);
   color: white;
   font-size: 12px;
   font-weight: 600;
@@ -173,7 +188,7 @@ h5.head_name {
 }
 
 .table-responsive .main-table tr td {
-  background-color: #d4d4d4;
+  background-color: #e4e2e2;
   font-size: 14px;
   padding: 10px;
   font-weight: 700;

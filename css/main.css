@@ -35,6 +35,14 @@ a {
   color: #619ac8;
 }
 
+.receipt_color {
+  background-color: #36e18c !important;
+}
+
+.receipt_color2 {
+  background-color: #45a779 !important;
+}
+
 /* end global classes */
 .details {
   background-color: #f6f6f6;
@@ -158,21 +166,17 @@ h5.head_name {
   width: 100%;
   overflow-x: auto;
 }
-
 .table-responsive .main-table {
   border-radius: 7px;
   border: none !important;
   text-align: center;
 }
-
 .table-responsive .main-table * {
   border: none !important;
 }
-
 .table-responsive .main-table tr {
   border: none !important;
 }
-
 .table-responsive .main-table tr th {
   background-color: rgb(37, 135, 89);
   color: white;
@@ -182,11 +186,9 @@ h5.head_name {
   padding: 10px;
   border-left: 1px solid rgba(197, 195, 195, 0.6705882353) !important;
 }
-
 .table-responsive .main-table tr th:last-child {
   border-left: none !important;
 }
-
 .table-responsive .main-table tr td {
   background-color: #e4e2e2;
   font-size: 14px;
@@ -194,7 +196,6 @@ h5.head_name {
   font-weight: 700;
   border-left: 1px solid rgba(197, 195, 195, 0.6705882353) !important;
 }
-
 .table-responsive .main-table tr td:last-child {
   border-left: none !important;
 }/*# sourceMappingURL=main.css.map */

@@ -31,9 +31,19 @@ a {
   cursor: pointer;
 }
 
+
 .supplies_color {
   color: #619ac8;
 }
+// input with different background color
+.receipt_color {
+  background-color: #36e18c !important;
+}
+
+.receipt_color2 {
+  background-color: #45a779 !important;
+}
+
 /* end global classes */
 
 .details {

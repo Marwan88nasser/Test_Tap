@@ -18,12 +18,15 @@
     }
     .buttons-line {
       .btn_option {
-        padding-left: 2px;
+        padding-left: 15px;
+        padding-right: 25px;
         display: flex;
+        white-space: nowrap;
         align-items: center;
         background-color: rgb(248 232 184);
         font-weight: 700;
         border: 1px solid rgb(237 192 66);
+        font-size: 13px;
       }
     }
   }

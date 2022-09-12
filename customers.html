@@ -116,18 +116,18 @@
         </div>
         <div class="details mb-3">
           <div class="buttons-line d-flex flex-wrap align-items-center justify-content-between gap-1">
-            <button class="btn btn_option">
+            <a href="#" class="btn btn_option">
               تفصيل
               <img class="me-2" src="image/scissors.svg" alt="" width="23">
-            </button>
-            <button class="btn btn_option">
+            </a>
+            <a href="#" class="btn btn_option">
               غير مستلم
               <img class="me-2" src="image/scissors.svg" alt="" width="23">
-            </button>
-            <button class="btn btn_option">
+            </a>
+            <a href="#delivery" class="btn btn_option" data-bs-toggle="modal">
               استلام
-              <img class="me-2" src="image/scissors.svg" alt="" width="23">
-            </button>
+              <img class="me-2" src="image/delivery.svg" alt="" width="23">
+            </a>
             <button class="btn btn_option">
               طباعة الفاتورة
               <img class="me-2" src="image/scissors.svg" alt="" width="23">
@@ -152,6 +152,153 @@
               تعديل استلام 
               <img class="me-2" src="image/scissors.svg" alt="" width="23">
             </button>
+          </div>
+        </div>
+        <!-- Modal  delivery -->
+        <div class="modal fade" id="delivery" tabindex="-1" aria-labelledby="delivery" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">
+                  <img class="me-2" src="image/delivery.svg" alt="" width="22">
+                  الاستلام
+                </h6>
+                <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="fabric_details mb-2">
+                  <div class="fabric_content">
+                    <div class="row g-2">
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">رقم العميل :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-8">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">اسم العميل :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">تاريخ التفصيل :</label>
+                          <input type="date" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">العدد :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">العربون :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder"> المبلغ :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">استلامات سابقة :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder"> تشمل خصم :</label>
+                          <input type="text" name="" id="" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="details mb-2">
+                  <h5 class="head_name p-1 mb-2  text-center">الاستلام</h5>
+                  <div class="catch-receipt_content receipt">
+                    <div class="row g-2">
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class=" text-nowrap fw-bolder">تاريخ الاستلام :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class=" text-nowrap fw-bolder">نقد :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">خصم :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">العدد المستلم :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">شبكة :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class=" text-nowrap fw-bolder">المبلغ المدفوعة :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color2">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">باقي الكمية :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color2">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">فيزا :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">ماستر :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">باقي المبلغ :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color2">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="inp_holder d-flex align-items-center gap-2">
+                          <label for="" class="text-nowrap fw-bolder">شيك :</label>
+                          <input type="text" name="" id="" class="form-control receipt_color">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">رجوع</button>
+                <button type="button" class="btn btn-success btn-sm">حفظ</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">

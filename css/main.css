@@ -23,7 +23,7 @@ a {
 }
 
 .form-control {
-  padding: 0.12rem 0.75rem !important;
+  padding: 0.1rem 0.75rem !important;
 }
 
 /* start global classes */
@@ -39,6 +39,7 @@ a {
   color: #619ac8;
 }
 
+/* end global classes */
 .receipt_color {
   background-color: #36e18c !important;
 }
@@ -47,7 +48,6 @@ a {
   background-color: #45a779 !important;
 }
 
-/* end global classes */
 .details {
   background-color: #f6f6f6;
   border: 1px solid #e1e0e0;

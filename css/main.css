@@ -24,6 +24,24 @@ label {
   color: #686565;
 }
 
+.check-border {
+  border: 1px solid #b0b0b0;
+}
+
+.img-holder img {
+  width: 83px;
+  height: 80px;
+}
+
+.img-holder-2 img {
+  width: 20px;
+  height: 100%;
+}
+
+.img-holder-3 img {
+  width: 33px;
+}
+
 .form-floating > label {
   left: 70% !important;
 }
@@ -35,6 +53,11 @@ label {
 .form-select {
   padding: 0.1rem 0.75rem 0.1rem 0.75rem !important;
   background-position: left 6px center !important;
+}
+
+.form-check-inline {
+  margin-bottom: 0% !important;
+  margin-right: 0% !important;
 }
 
 .text-nowrap {
